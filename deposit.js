@@ -1,5 +1,7 @@
 
 
+
+
 function Deposit() {
   const ctx = React.useContext(UserContext);
   const [show, setShow] = React.useState(true);
@@ -60,11 +62,11 @@ function Deposit() {
       <Card
         bgcolor="dark"
         header="Deposit"
-        title="Deposit Funds To Your Account Here"
+        title="Make It Rain!"
         status={status}
         body={show ? (
           <>
-            <p>Balance: {balance}</p>
+            <p>Balance: $ {balance}</p>
             Deposit Amount<br />
             <input type="input" required className="form-control" id="amount" placeholder="Enter deposit amount" value={amount} onChange={e => handleChange(e, setAmount)} /><br />
             <button type="submit" className="btn btn-light" disabled={disabledValue} onClick={handleCreate}>Make Deposit</button>
@@ -72,7 +74,7 @@ function Deposit() {
         ) : (
           <>
             <h5>Success</h5>
-            <p>New Balance: {balance}</p>
+            <p>New Balance: $ {balance}</p>
             <button type="submit" className="btn btn-light" onClick={clearForm}>Make another deposit</button>
           </>
         )}
@@ -82,4 +84,5 @@ function Deposit() {
     />
   )
 }
+
 
