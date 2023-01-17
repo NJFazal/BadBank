@@ -1,5 +1,7 @@
 
 
+
+
 function Withdraw() {
   const ctx = React.useContext(UserContext);
   const [show, setShow] = React.useState(true);
@@ -63,11 +65,11 @@ function Withdraw() {
       <Card
         bgcolor="dark"
         header="Withdraw"
-        title="Withdraw Funds From Your Account Here"
+        title="Spend That Money!"
         status={status}
         body={show ? (
           <>
-            <p>Balance: {balance}</p>
+            <p>Balance: $ {balance}</p>
             Withdraw Amount<br />
             <input type="input" required className="form-control" id="amount" placeholder="Enter withdrawal amount" value={amount} onChange={e => handleChange(e, setAmount)} /><br />
             <button type="submit" className="btn btn-light" disabled={disabledValue} onClick={handleCreate}>Make Withdrawal</button>
@@ -75,7 +77,7 @@ function Withdraw() {
         ) : (
           <>
             <h5>Success</h5>
-            <p>New Balance: {balance}</p>
+            <p>New Balance: $ {balance}</p>
             <button type="submit" className="btn btn-light" onClick={clearForm}>Make another withdrawal</button>
             </>
         )}
@@ -85,3 +87,4 @@ function Withdraw() {
     />
   )
 }
+
