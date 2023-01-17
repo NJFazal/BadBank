@@ -62,8 +62,8 @@ function Withdraw() {
     center={
       <Card
         bgcolor="dark"
-        header="Deposit"
-        title="Deposit Funds To Your Account Here"
+        header="Withdraw"
+        title="Withdraw Funds From Your Account Here"
         status={status}
         body={show ? (
           <>
