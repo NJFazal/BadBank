@@ -7,7 +7,7 @@
         <h2><span style='font-size:50px;'>&#128187;</span>How To Run: </h2>
         <p>This was created using react. It is a stand alone so it needs to be run using http-server on a localhost8080. You can create multiple accounts and deposit and withdraw funds. There is an prevent overdraft function.</p>
         <h2><span style='font-size:50px;'>&#128679;</span>Roadmap to Future Improvements:</h2>
-        <p>I will work on converting this to a create react app version.</p>
+        <p>I will work on converting this to a create react app version. I am also currently working on adding back end to this. Updates coming soon.</p>
         <h2><span style='font-size:50px;'>&#128220;</span>License:</h2>
 <p>MIT License<br /></p> 
 
